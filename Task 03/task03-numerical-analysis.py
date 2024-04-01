@@ -12,6 +12,7 @@ def evaluate(f, x1):
 
 
 def Newton_Raphson(f, a=0, b=0, eps=0.00000000001, max_iter=200):
+    print("====================Newton Raphson starting...")
     i = 1
     xr = (a + b) / 2
     f_tag = Derivative(f)
@@ -35,6 +36,7 @@ def Newton_Raphson(f, a=0, b=0, eps=0.00000000001, max_iter=200):
         print('\033[94m', f"\nThe equation f(x) has an approximate root at x = {xr}", '\033[0m')
 
 def Secant_Method(f, a, b, eps=0.00000000001, max_iter=200):
+    print("====================Secant Method starting...")
     i = 1
     xr0 = (a + b) * (1/3)
     xr1 = (a + b) * (2/3)
